@@ -1,0 +1,164 @@
+:root {
+    --primary-color: #0A1128;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 5.5rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4rem;
+}
+
+h6 {
+    font-size: 3.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 6.5rem;
+    width: 100%;
+
+    padding: 2rem 2rem 1rem;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    border-bottom: #f0f0f0 solid .2rem;
+
+    display: block;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading h6{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.logo{
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+}
+
+.navigation li{
+    list-style: none;
+}
+
+.navigation li a {
+    display: block;
+
+    font-size: 1.8rem;
+    margin: 0 2rem;
+    padding-bottom: .7rem;
+    border-bottom: white solid .3rem;
+
+    transition: all 300ms ease-in-out;
+
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.navigation li a:hover{
+    border-bottom-color: crimson;
+}
+
+.sections section:nth-child(2n - 1) {
+    background-image: url("../img/main-bg.svg");
+    background-size: cover;
+    background-position: center center;
+    color: var(--white);
+    min-height: 100vh;
+    padding-top: 6.5rem;
+}
+
+.sections section:nth-child(2n) {
+    background-color: white;
+    color: var(--primary-color);
+    min-height: 100vh;
+    padding-top: 6.5rem;
+}
+
+footer {
+    font-size: 1.5rem;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.circle {
+    border-radius: 50%;
+    border: var(--primary-color) solid .1rem;
+    width: 5rem;
+    height: 5rem;
+
+    background-color: var(--white);
+
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
