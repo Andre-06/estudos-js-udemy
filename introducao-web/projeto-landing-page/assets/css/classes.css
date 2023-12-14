@@ -3,7 +3,36 @@
     margin: 0 auto;
 }
 
-.half-page-colllum {
-    max-width: 50%;
-    padding: 10rem;
+.section {
+    padding: 0 5rem;
+}
+
+.grid-text-image {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        'text-content img'
+    ;
+
+    align-items: center;
+    justify-items: center;
+
+    min-height: calc(100vh - var(--menu-height));
+}
+
+.title-text-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-text-div h1 {
+    margin-bottom: 5rem;
+}
+
+.img-div img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }

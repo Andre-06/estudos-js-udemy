@@ -1,0 +1,16 @@
+@media (max-width:1000px) {
+    .grid-text-image {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas:
+        'text-content'
+        'img'
+    ;
+
+        align-items: center;
+        justify-items: center;
+
+        min-height: calc(100vh - var(--menu-height));
+    }
+}

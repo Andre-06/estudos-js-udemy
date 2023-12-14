@@ -14,3 +14,11 @@
     padding-top: 6.5rem;
 }
 
+#home .img-div {
+    grid-area: img;
+}
+
+#home .title-text-div {
+    grid-area: text-content;
+}
+
