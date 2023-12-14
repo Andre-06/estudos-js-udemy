@@ -1,0 +1,16 @@
+.sections section:nth-child(2n - 1) {
+    background-image: url("../img/main-bg.svg");
+    background-size: cover;
+    background-position: center center;
+    color: var(--white);
+    min-height: 100vh;
+    padding-top: 6.5rem;
+}
+
+.sections section:nth-child(2n) {
+    background-color: white;
+    color: var(--primary-color);
+    min-height: 100vh;
+    padding-top: 6.5rem;
+}
+

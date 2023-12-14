@@ -1,0 +1,9 @@
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.half-page-colllum {
+    max-width: 50%;
+    padding: 10rem;
+}
