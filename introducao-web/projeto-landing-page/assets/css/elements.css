@@ -56,3 +56,11 @@ p {
     margin-bottom: 5rem;
 }
 
+div {
+    min-height: 100%;
+}
+
+section {
+    position: relative;
+}
+

@@ -1,8 +1,7 @@
 .main-header {
-    height: 6.5rem;
+    min-height: 6.5rem;
     width: 100%;
 
-    padding: 2rem 5rem 1rem;
 
     position: fixed;
     top: 0;
@@ -11,13 +10,16 @@
     background-color: white;
     border-bottom: var(--light-gray-color) solid .2rem;
 
-    display: block;
+    z-index: 1;
 }
 
 .heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 .heading h6{

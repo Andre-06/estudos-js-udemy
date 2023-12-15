@@ -4,7 +4,6 @@
     background-position: center center;
     color: var(--white);
     min-height: 100vh;
-    padding-top: 6.5rem;
 
     ::selection{
         color: var(--black);
@@ -16,7 +15,6 @@
     background-color: white;
     color: var(--primary-color);
     min-height: 100vh;
-    padding-top: 6.5rem;
 
     ::selection{
         color: var(--white);
@@ -31,4 +29,10 @@
 #home .title-text-div {
     grid-area: text-content;
 }
+
+#grid-one .main-content header h1 {
+    margin-bottom: 1.2rem;
+}
+
+#grid-one .main-content
 
