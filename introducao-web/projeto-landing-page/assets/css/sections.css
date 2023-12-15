@@ -5,6 +5,11 @@
     color: var(--white);
     min-height: 100vh;
     padding-top: 6.5rem;
+
+    ::selection{
+        color: var(--black);
+        background-color: var(--white);
+    }
 }
 
 .sections section:nth-child(2n) {
@@ -12,6 +17,11 @@
     color: var(--primary-color);
     min-height: 100vh;
     padding-top: 6.5rem;
+
+    ::selection{
+        color: var(--white);
+        background-color: var(--black);
+    }
 }
 
 #home .img-div {

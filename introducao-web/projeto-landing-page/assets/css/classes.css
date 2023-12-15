@@ -27,12 +27,13 @@
     align-items: center;
 }
 
-.title-text-div h1 {
-    margin-bottom: 5rem;
-}
-
 .img-div img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.center-title-text {
+    text-align: center;
+    max-width: 40%;
 }

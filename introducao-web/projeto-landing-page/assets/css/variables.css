@@ -1,6 +1,7 @@
 :root {
     --primary-color: #0A1128;
-    --white: #FFFFFF;
+    --white: #FFF;
+    --black: #000;
     --light-gray-color: #EEE;
     --menu-height: 6.5rem;
 }
