@@ -1,9 +1,13 @@
+.sections section {
+    min-height: 100vh;
+    position: relative;
+}
+
 .sections section:nth-child(2n - 1) {
     background-image: url("../img/main-bg.svg");
     background-size: cover;
     background-position: center center;
     color: var(--white);
-    min-height: 100vh;
 
     ::selection{
         color: var(--black);
@@ -14,7 +18,6 @@
 .sections section:nth-child(2n) {
     background-color: white;
     color: var(--primary-color);
-    min-height: 100vh;
 
     ::selection{
         color: var(--white);
@@ -30,9 +33,26 @@
     grid-area: text-content;
 }
 
-#grid-one .main-content header h1 {
-    margin-bottom: 1.2rem;
+#gallery .grid-template{
+    grid-gap: 4rem;
 }
 
-#grid-one .main-content
+#gallery .grid-template .img-div {
+    max-height: 36rem;
+    max-width: 36rem;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
 
+#gallery .grid-template .img-div img {
+    transition: all 300ms ease-in-out;
+}
+
+#gallery .grid-template .img-div img:hover{
+    transform: scale(1.2) rotate(10deg);
+}
+
+#gallery .grid-template .img-div:hover{
+    transform: scale(0.95);
+    border-radius: 2rem;
+}

@@ -4,6 +4,10 @@
     padding: 10rem var(--gap);
 }
 
+.main-content header h1 {
+    margin-bottom: 1.2rem;
+}
+
 .grid-text-image {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -34,7 +38,7 @@
 
 .center-title-text {
     text-align: center;
-    max-width: 74rem;
+    max-width: 70rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -45,7 +49,7 @@
 .grid-template {
     display: grid;
     grid-gap: var(--gap);
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
 
     counter-reset: grid-counter;
 }
@@ -53,6 +57,7 @@
 .grid-template-header {
     position: relative;
     padding: 3rem;
+    white-space: nowrap;
 }
 
 .grid-template-header h6 {
@@ -71,4 +76,21 @@
     bottom: 0;
 
     rotate: 2deg;
+}
+
+.table-view {
+    overflow-x: auto;
+}
+
+.pricing-table {
+    min-width: 56.8rem;
+}
+
+.pricing-table th {
+    background-color: var(--light-gray-color);
+}
+
+.pricing-table tfoot td {
+    background-color: var(--light-gray-color);
+    text-align: right;
 }

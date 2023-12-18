@@ -20,6 +20,9 @@
 
     padding-top: 2rem;
     padding-bottom: 1rem;
+
+    overflow-x: auto;
+
 }
 
 .heading h6{
@@ -37,6 +40,9 @@
 .navigation{
     display: flex;
     justify-content: center;
+    overflow-x: auto;
+
+    white-space: nowrap;
 }
 
 .navigation li{
@@ -55,6 +61,8 @@
 
     text-decoration: none;
     color: var(--primary-color);
+
+    text-wrap: none;
 }
 
 .navigation li a:hover{

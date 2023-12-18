@@ -1,16 +1,15 @@
 @media (max-width:1000px) {
     .grid-text-image {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-        'text-content'
-        'img';
-        gap: 0;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}
+
+@media (max-width: 860px) {
+    .grid-template {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
     }
 
-    .img-div {
-        display: flex;
-        align-items: start;
-        justify-items: center;
-    }
 }
