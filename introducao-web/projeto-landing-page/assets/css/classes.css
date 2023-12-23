@@ -80,6 +80,7 @@
 
 .table-view {
     overflow-x: auto;
+    display: block;
 }
 
 .pricing-table {

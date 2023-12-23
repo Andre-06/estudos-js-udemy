@@ -47,7 +47,7 @@ h6 {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: var(--primary-color);
 }
 
 p {
@@ -80,3 +80,57 @@ table th {
 
     text-align: left;
 }
+
+form fieldset {
+    margin-bottom: 5rem;
+}
+
+form input {
+    background-color: var(--white);
+    height: 5rem;
+    border: none;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+form textarea {
+    border: none;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+form p{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin: 0;
+}
+
+form ::placeholder {
+    color: var(--gray-color);
+    font-size: 2.5rem;
+}
+
+form :focus {
+    box-shadow: 0 0 1rem .2rem crimson;
+    outline: none;
+    transform: scale(1.009);
+}
+
+form button {
+    font-size: 3rem;
+    background-color: transparent;
+    border: var(--white) .4rem solid;
+    padding: 1.5rem 1rem;
+    color: var(--white);
+    cursor: pointer;
+
+    transition: all 300ms ease-in-out;
+}
+
+form button:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+

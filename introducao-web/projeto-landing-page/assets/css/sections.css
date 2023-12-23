@@ -56,3 +56,27 @@
     transform: scale(0.95);
     border-radius: 2rem;
 }
+
+#contact .data-group legend{
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#contact form .data-group {
+    display: flex;
+    gap: var(--gap);
+    flex-flow: row wrap;
+}
+
+#contact form .message-group{
+
+}
+
+#contact form fieldset p {
+    flex: 1 1 30rem;
+}
+
+#contact form fieldset {
+    border: none;
+}
