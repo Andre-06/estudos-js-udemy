@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 19</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+            font-family: sans-serif;
+            font-size: 20px;
+            color: #ebe6ea;
+        }
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 100vh;
+
+            background-color: #53576b;
+        }
+
+        p {
+            margin-bottom: 3px;
+            transition: all 105ms linear;
+        }
+        p:hover {
+            transform: scale(1.05);
+        }
+
+        section {
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        form {
+            width: 380px;
+            max-width: 380px;
+        }
+
+        fieldset{
+            display: flex block;
+            flex-direction: column;
+            border: none;
+        }
+
+        fieldset input{
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            color: #394651;
+        }
+
+        fieldset label{
+            margin-bottom: 2px;
+        }
+
+        fieldset button {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            color: #394651;
+            transition: all 300ms ease-in-out;
+        }
+
+        fieldset button:hover{
+            background-color: #394651;
+            color: #F0F0F0;
+        }
+
+        section {
+            display: grid;
+            place-items: center;
+            grid-gap: 50px;
+        }
+
+        .pessoas-div {
+            overflow-y: auto;
+            max-height: 350px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="section-form">
+        <form class="form" action="" method="get">
+            <fieldset>
+                <label for="name">Seu nome</label>
+                <input type="text" name="name" class="name" id="name">
+                <label for="last-name">Seu sobrenome</label>
+                <input type="text" name="last-name" class="last-name" id="last-name">
+                <label for="age">Sua idade</label>
+                <input type="number" name="age" class="age" id="age">
+                <label for="weight">Seu peso</label>
+                <input type="number" name="weight" class="weight" id="weight">
+                <label for="height">Sua altura</label>
+                <input type="number" name="height" class="height" id="height">
+
+                <button type="submit" onclick="">Enviar</button>
+                <button type="reset" onclick="">Limpar</button>
+            </fieldset>
+        </form>
+
+
+        <div class="pessoas-div">
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
