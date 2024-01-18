@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+    --primary-color: rgb(17, 86, 102);
+    --primary-color-darker: rgb(9, 48, 56);
+    --second-color-darker: rgb(22, 47, 47);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background: var(--primary-color-darker);
+}
+
+.time-card {
+    text-align: center;
+    font-size: 4.7em;
+    color: var(--second-color-darker);
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.card-buttons {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    border: none;
+    background: var(--second-color-darker);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+    flex: 1;
+    transition: transform 0.15s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.90;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.start-button {
+    background: #4CAF50; /* Cor verde associada ao botão Start */
+}
+
+.stop-button {
+    background: #FF5252; /* Cor vermelha associada ao botão Stop */
+}
+
+.clear-button {
+    background: #607D8B; /* Cor azul-acinzentada associada ao botão Clear */
+}
+
+.clock-border {
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    border: 10px solid var(--primary-color-darker);
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.clock-transparent {
+    position: absolute;
+    box-sizing: content-box;
+    z-index: 2;
+    height: 475px;
+    width: 475px;
+    border-radius: 50%;
+    top: -15px;
+    left: -15px;
+
+    background: conic-gradient(
+            white 0%,
+            transparent 0
+    );
+
+    display: grid;
+    align-items: center;
+
+}
